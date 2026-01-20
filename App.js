@@ -13,7 +13,7 @@ export default function App() {
   const [phone, setPhone] = useState('');
   const [showCursor, setShowCursor] = useState(true);
 
-  // CON TRỎ NHẤP NHÁY
+  
   useEffect(() => {
     const interval = setInterval(() => {
       setShowCursor(prev => !prev);
@@ -52,7 +52,7 @@ export default function App() {
           Dùng số điện thoại để đăng nhập hoặc đăng ký tài khoản tại OneHousing Pro
         </Text>
 
-        {/* INPUT + CON TRỎ */}
+
         <View style={styles.inputBox}>
           <Text style={styles.inputText}>
             {phone}
@@ -67,7 +67,7 @@ export default function App() {
         </View>
       </View>
 
-      {/* PHẦN DƯỚI */}
+
       <View style={styles.bottom}>
         <TouchableOpacity
           style={[
@@ -113,7 +113,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff'
   },
 
-  /* PHẦN TRÊN */
+
   top: {
     flex: 1,
     padding: 24
@@ -158,7 +158,7 @@ const styles = StyleSheet.create({
     color: '#aaa'
   },
 
-  /* PHẦN DƯỚI */
+
   bottom: {
     paddingHorizontal: 24,
     paddingBottom: 16
